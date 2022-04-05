@@ -1,11 +1,4 @@
 <%@taglib prefix="sql" uri="http://java.sun.com/jsp/jstl/sql"%>
-<%-- 
-    Document   : DisplayAccount
-    Created on : Feb 28, 2022, 12:10:51 PM
-    Author     : Josiah Martin
-    Lab        : 8
-    Due        : 7 March 2022
---%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%--<%@page import = "com.chattbank.Account"%>--%>
