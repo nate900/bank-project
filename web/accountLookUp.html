@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<!--
+Lab# 2, Java III, CRN: 40876
+Author     : Josiah Martin
+Lab        : 8
+Due        : 7 March 2022
+-->
+<html>
+    <head>
+        <title>Chattahoochee Bank Account Look Up</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/web-fonts.css">
+        <style>
+            body{
+                background-color: #000;
+            }
+            .background-image{
+                background-color: #ddd;
+                background-image: url("images/account-look-up-background.jpg"), url("https://cdn.pixabay.com/photo/2017/09/07/08/54/money-2724241__480.jpg");
+                background-repeat: no-repeat;
+                background-position: center;
+                background-size: cover;
+                height: 900px;
+            }
+            .container{
+                width:50%;
+                margin: auto;
+                background-color: darkgray;
+                border: 3px #ddd solid;
+                border-radius: 10px;
+            }
+            .container > form{
+                display: box;
+                width: 50%;
+                margin: auto;
+                padding: 1rem;
+            }
+            .container > form > label{
+                margin: .5rem;
+                padding: .3rem;
+            }
+            .container > form > input{
+                padding: .3rem;
+                margin: .5rem;
+            }
+            #submitButton{
+                width: 100%;
+                font-size: 1rem;
+                margin: .5rem;
+            }
+            #resetButton{
+                width: 100%;
+                font-size: 1rem;
+                margin: .5rem;
+            }
+        </style>
+    </head>
+    <body>
+        <div class="background-image">
+            <h1 style="text-align: center; font-size: 2.5rem; padding: .5rem; opacity: .8;">Account Look Up</h1>
+            <div class="container">
+                <form name="accountLookupForm" action="http://localhost:8080/ChattBank/AccountLookUpServlet" method="post" onsubmit="return validateForm()">
+                    <!--4 textboxes
+                    account number
+                    customer ID
+                    type of account
+                    account balance
+                    -->
+                    <label for="acctNoField">Account #:</label>
+                    <input id="acctNoField" name="acctNoField" type="text" placeholder="enter your account number"><br>
+                    <label for="custID-field">Customer ID:</label>
+                    <input id="custIdField" name="custIdField" type="text" placeholder="enter your customer ID"><br>
+                    <label for="acctType-field">Account Type:</label>
+                    <input id="acctTypeField" name="acctTypeField" type="text" placeholder="enter your account type"><br>
+                    <label for="balanceField">Balance:</label>
+                    <input id="balanceField" name="balanceField" type="number"><br>
+                    <input id="submitButton" name="submit" type="submit" value="Look Up"><br>
+                    <input id="resetButton" name="reset" type="reset" value="Clear">
+                </form>
+                <a style="display: block; text-align: center;" href="DisplayAccounts.jsp">View All Accounts</a>
+            </div>
+        </div>
+        <script>
+            function validateForm(){
+                return (validateAccountNumber() && validateCustId());
+            }
+            
+            function validateAccountNumber(){
+                var accountNumber = document.getElementById("acctNoField").value;
+                if(accountNumber === ""){
+                    alert("Please enter a valid account number.");
+                    return false;
+                }else if(isNaN(accountNumber)){
+                    alert("The account number must be a number.");
+                    return false;
+                }
+                return true;
+            }
+            
+            function validateCustId(){
+                var custId = document.getElementById("custIdField").value;
+                
+                if(custId === "") {
+                    alert("Must enter a customer id");
+                    return false;
+                }else if(isNaN(custId)){
+                    alert("Customer ID must be a number");
+                    return false;
+                } else if(custId < 3001 || custId > 3999){
+                    alert("Customer ID must be a number between 3000 and 4000");
+                    return false;
+                }
+                return true;
+            }
+            
+        </script>
+    </body>
+</html>

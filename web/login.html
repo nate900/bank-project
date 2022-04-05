@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<!--
+Lab# 2, Java III, CRN: 40876
+Author: Josiah Martin
+Date: 19 January 2022
+Due: 24 January 2022
+-->
+<html>
+    <head>
+        <title>Chattahoochee Bank Login</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="css/web-fonts.css">
+        <style>
+            body{
+                background-image: linear-gradient(yellow, red);
+            }
+            .container{
+                width: 50%;
+                margin: auto;
+                min-height: 600px;
+                background-image: url("images/login-page-background.jpg"), url("https://media-exp1.licdn.com/dms/image/C4E1BAQHU77Da1HGgtA/company-background_10000/0/1546973901912?e=2159024400&v=beta&t=ygGjYiok7uEBdbI16rrpBSlD5yuaLqV3YTmTRv3sqeI");
+                background-repeat: no-repeat;
+                border-radius: 12px;
+                border: 3px #ddd solid;
+            }
+            .container > form{
+                width: 50%;
+                margin: auto;
+                padding: 3rem;
+                color: #ddd;
+                font-size: 1.3rem;
+            }
+            .container > form > label{
+                padding: .3rem;
+            }
+            .container > form > input{
+                padding: .3rem;
+                margin: .3rem;
+            }
+            #submitButton{
+                width:100%;
+            }
+            #clearButton{
+                width:100%;
+            }
+        </style>
+    </head>
+    <body>
+        <main id="main">
+            <h1 style="text-align: center; margin: 1.5rem; font-size: 3rem;">Chattahoochee Bank Login</h1>
+            <div class="container">
+                <form name="loginForm" action="http://localhost:8080/ChattBank/LoginServlet" onsubmit="return validateForm()" method="post">
+                    <!--Customer ID textbox-->
+                    <label for="custIdField">Customer ID:</label>
+                    <input id="custIdField" name="custIdField" type="text" placeholder="enter customer ID here"><br>
+                    <!--Password textbox-->
+                    <label for="passwordField">Password:</label>
+                    <input id="passwordField" name="passwordField" type="password" placeholder="enter password here"><br>
+                    <!--submit button-->
+                    <input id="submitButton" name="submitButton" type="submit" value="Submit"><br>
+                    <!--clear button-->
+                    <input id="clearButton" name="clear-button" type="reset" value="Clear">
+                </form>
+            </div>
+        </main>
+        <!--External JavaScript for validating the form above-->
+        <script type="text/javascript" src="loginValidation.js"></script>
+    </body>
+</html>
