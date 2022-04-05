@@ -1,10 +1,4 @@
-<%-- 
-    Document   : DisplayAccounts
-    Created on : Mar 5, 2022, 6:56:08 PM
-    Author     : Josiah Martin
-    Lab        : 8
-    Due        : 7 March 2022
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!--Add necessary import-->
