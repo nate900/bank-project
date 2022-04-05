@@ -3,10 +3,7 @@
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import = "com.chattbank.Customer"%>
 <!DOCTYPE html>
-<!--
-Author: Josiah Martin
-Date: 16 February 2022
--->
+
 <html>
     <head>
         <title>Error Page</title>
