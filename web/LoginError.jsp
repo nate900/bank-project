@@ -1,10 +1,4 @@
-<%-- 
-    Document   : LoginError
-    Created on : Feb 28, 2022, 11:54:01 AM
-    Author     : Josiah Martin
-    Lab        : 7
-    Due        : 28 February 2022
---%>
+
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@page import = "com.chattbank.Customer"%>
