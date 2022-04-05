@@ -2,7 +2,7 @@ package com.chattbank;
 
 /*****************************************************************************
  * Java III, Lab 6: More Servlets
- * Author: Josiah Martin
+ * Author: NATE900
  * Date: 16 February 2022
  * Due: 21 February 2022
  *****************************************************************************/
