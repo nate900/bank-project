@@ -1,8 +1,4 @@
-<%-- 
-    Document   : AccountLookUpError
-    Created on : Mar 14, 2022, 9:36:25 AM
-    Author     : josia
---%>
+
 <%@page import="com.chattbank.Customer"%>
 <html>
     <head>
