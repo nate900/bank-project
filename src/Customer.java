@@ -23,7 +23,7 @@ public class Customer {
     Connection conn;
     
     //Path referencing the database
-    private final String PATH = "jdbc:ucanaccess://C:/Users/josia/OneDrive/Desktop/ChattBank/database/ChattBankMDB.mdb";
+    private final String PATH = "jdbc:ucanaccess://YOUR_FILE_PATH_TO_DATABASE";
     private final String DRIVER = "net.ucanaccess.jdbc.UcanaccessDriver";
     
     //no-arg constructor
