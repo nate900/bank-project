@@ -1,0 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Work+Sans:wght@200;400&display=swap');
+
+*{
+    color: #ffffffc7;
+    font-family: 'Work Sans', sans-serif;
+}
+
+input{
+    color: #000000c7;
+}
