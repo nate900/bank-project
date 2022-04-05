@@ -2,7 +2,7 @@ package com.chattbank;
 
 /******************************************************************************
  * Lab 5: Java 3, More Business Objects
- * Author: Josiah Martin
+ * Author: NATE900
  * Date: 10 February 2022
  * Due: 14 February 2022
  *******************************************************************************/
