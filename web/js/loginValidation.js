@@ -1,9 +1,4 @@
-/******************************************************************************
- * Extra Creadit, Lab# 2, Java III, CRN: 40876
- * Author: Josiah Martin
- * Date: 20 January 2022
- * Due: 24 January 2022
- *******************************************************************************/
+
 
 //method to validate the data in the form
 function validateForm(){
