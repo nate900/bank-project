@@ -9,7 +9,7 @@ package com.chattbank;
 import java.sql.*;
 public class DBConnection {
     //Path referencing the database
-    private final String path = "jdbc:ucanaccess://C:/Users/josia/OneDrive/Desktop/ChattBank/database/ChattBankMDB.mdb";
+    private final String path = "jdbc:ucanaccess://C:YOUR_FILE_PATH_TO_DATABASE";
     private final String driver = "net.ucanaccess.jdbc.UcanaccessDriver";
     
     private Connection conn;
